@@ -1,0 +1,7 @@
+<h1>All Moods</h1>
+<ul>
+  <% moods.forEach(m => { %>
+    <li>Entry <%= m.entryId %>: <%= m.mood %></li>
+  <% }) %>
+</ul>
+<a href="/mood/new">Add Mood</a>

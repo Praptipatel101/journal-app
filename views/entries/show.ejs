@@ -1,5 +1,17 @@
 <h1>Journal Entry</h1>
+
+<p><strong>Content:</strong></p>
 <p><%= entry.content %></p>
+
+<p><strong>Mood:</strong> 
+  <% if (mood) { %>
+    <a href="/mood/<%= mood.mood %>">
+      <%= mood.mood %>
+    </a>
+  <% } else { %>
+    No mood set
+  <% } %>
+</p>
 
 <p><a href="/entries/<%= entry.id %>/edit">Edit Entry</a></p>
 

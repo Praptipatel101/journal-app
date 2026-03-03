@@ -1,7 +1,19 @@
 <h1>Add a Journal Entry!</h1>
+
 <form action="/entries/new" method="POST">
   <label for="content">Entry</label>
   <textarea id="content" name="content" rows="8" cols="60" required></textarea>
   <br />
+
+  <label for="mood">Mood</label>
+  <select id="mood" name="mood" required>
+    <option value="">Select a mood</option>
+    <option value="Happy">Happy</option>
+    <option value="Sad">Sad</option>
+    <option value="Angry">Angry</option>
+    <option value="Calm">Calm</option>
+  </select>
+  <br /><br />
+
   <button type="submit">Save Entry</button>
 </form>
